@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "ElfOnUnicorn.h"
+#include "../../Base/Base.h"
 
 ElfOnUnicorn::ElfOnUnicorn(): Cavalryman() {
     Cavalryman::health = 9;
@@ -19,4 +20,9 @@ void ElfOnUnicorn::whatYouName() {
 
 ObjectInterface *ElfOnUnicorn::copy() {
     return new ElfOnUnicorn(*this);
+}
+
+ElfOnUnicorn::~ElfOnUnicorn() {
+    observer->handleEvent(numberInArray);
+
 }

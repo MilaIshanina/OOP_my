@@ -4,9 +4,10 @@
 
 #include <iostream>
 #include "KnightOnHorse.h"
+#include "../../Base/Base.h"
 
 KnightOnHorse::KnightOnHorse(): Cavalryman() {
-    Cavalryman::health = 9;
+    Cavalryman::health = 11;
     Cavalryman::armor = 2;
     Cavalryman::damage = 2;
     //countSteps = 2;
@@ -18,4 +19,9 @@ void KnightOnHorse::whatYouName() {
 
 ObjectInterface *KnightOnHorse::copy() {
     return new KnightOnHorse(*this);
+}
+
+KnightOnHorse::~KnightOnHorse() {
+    observer->handleEvent(numberInArray);
+
 }

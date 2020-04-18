@@ -13,6 +13,7 @@ public:
     KnightOnHorse();
     virtual void whatYouName();
     ObjectInterface* copy() override;
+    ~KnightOnHorse();
 };
 
 

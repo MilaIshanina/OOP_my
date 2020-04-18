@@ -5,6 +5,7 @@
 #include "Unit.h"
 
 
+
 //----------------------------------- Конструктор --------------------------------//
 /*Unit::Unit(unsigned health, unsigned armor, unsigned damage)////////////////
 :health(health), armor(armor), damage(damage){
@@ -14,15 +15,15 @@
 
 
 
-unsigned Unit::getHealth() const {
+int Unit::getHealth() const {
     return health;
 }
 
-void Unit::setHealth(unsigned health) {
+void Unit::setHealth(int health) {
     Unit::health = health;
 }
 
-unsigned Unit::getArmor() const {
+int Unit::getArmor() const {
     return armor;
 }
 
@@ -30,7 +31,7 @@ void Unit::setArmor(unsigned armor) {
     Unit::armor = armor;
 }
 
-unsigned Unit::getDamage() const {
+int Unit::getDamage() const {
     return damage;
 }
 
@@ -45,6 +46,41 @@ char Unit::getName() const {
 void Unit::setName(char name) {
     Unit::name = name;
 }
+
+void Unit::subscribeObserver(Observer *observer) {
+    Unit::observer = observer;
+}
+
+unsigned int Unit::getNumberInArray() const {
+    return numberInArray;
+}
+
+void Unit::setNumberInArray(unsigned int numberArray) {
+    Unit::numberInArray = numberArray;
+}
+
+int *Unit::getHealthForUpdate() {
+    return &health;
+}
+
+int* Unit:: getArmorForUpdate(){
+    return &armor;
+}
+
+int* Unit::getDamageForUpdate() {
+    return &damage;
+}
+
+void Unit::attack(Unit *unit) {
+    unit->setHealth(unit->getHealth()-damage);
+
+}
+
+/*void Unit::subscribeBase(Base *base) {//юнит теперь может вызвать что-то из базы
+    Unit::base = base;
+}*/
+
+
 
 /*void Unit::name() {
 

@@ -4,7 +4,8 @@
 
 #ifndef UNTITLED_OBJECTINTERFACE_H
 #define UNTITLED_OBJECTINTERFACE_H
-//----------------------------------- Интерфейс объекта-юнита --------------------------------//
+//----------------------------------- Интерфейс объекта на поле --------------------------------//
+
 class ObjectInterface{
 public:
     //virtual void move() = 0;    //метод длвижения

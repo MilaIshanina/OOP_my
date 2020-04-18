@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "Gnome.h"
+#include "../../Base/Base.h"
 
 Gnome::Gnome(): Infantryman() {
     Infantryman::health = 9;
@@ -19,4 +20,10 @@ void Gnome::whatYouName() {
 
 ObjectInterface *Gnome::copy() {
     return new Gnome(*this);
+}
+
+Gnome::~Gnome() {
+    std::cout<<"GNOME!"<<std::endl;
+    observer->handleEvent(numberInArray);
+
 }

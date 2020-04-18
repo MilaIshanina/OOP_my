@@ -13,6 +13,7 @@ public:
     Knight();
     void whatYouName() override;
     ObjectInterface* copy() override;
+    ~Knight();
 };
 
 

@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "Archer.h"
+#include "../../Base/Base.h"
 
 
 Archer::Archer() : Artillerist() {
@@ -25,5 +26,12 @@ ObjectInterface *Archer::copy() {
     return new Archer(*this);
 
 }
+
+Archer::~Archer() {
+    std::cout<<"ARCHER" << std::endl;
+    observer->handleEvent(numberInArray);
+
+}
+
 
 

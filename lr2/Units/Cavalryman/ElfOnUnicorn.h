@@ -13,6 +13,7 @@ public:
     ElfOnUnicorn();
     void whatYouName() override;
     ObjectInterface* copy() override;
+    ~ElfOnUnicorn();
 };
 
 

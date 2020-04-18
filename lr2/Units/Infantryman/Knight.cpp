@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "Knight.h"
+#include "../../Base/Base.h"
 
 Knight::Knight(): Infantryman() {
     Infantryman::health = 9;
@@ -19,4 +20,10 @@ void Knight::whatYouName() {
 
 ObjectInterface *Knight::copy() {
     return new Knight(*this);
+}
+
+Knight::~Knight() {
+    std::cout<<"KNIGHT" << std::endl;
+    observer->handleEvent(numberInArray);
+
 }

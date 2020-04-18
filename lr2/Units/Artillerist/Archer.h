@@ -14,7 +14,7 @@ public:
 
     void whatYouName() override;
     ObjectInterface* copy() override;
-
+    ~Archer();
 
 };
 

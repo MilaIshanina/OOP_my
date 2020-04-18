@@ -21,6 +21,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="untitled" />
+  </component>
   <component name="ProjectId" id="1YDRwj9f2ZDjYmU9dCczlaKMRx6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,7 +33,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
     <configuration name="untitled" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
@@ -78,7 +82,14 @@
       <workItem from="1585665963092" duration="15746000" />
       <workItem from="1585861120916" duration="1872000" />
       <workItem from="1585939084037" duration="382000" />
-      <workItem from="1586602160403" duration="15696000" />
+      <workItem from="1586602160403" duration="16185000" />
+      <workItem from="1586628505432" duration="11143000" />
+      <workItem from="1586705840309" duration="1200000" />
+      <workItem from="1586781806063" duration="1010000" />
+      <workItem from="1586785468698" duration="7384000" />
+      <workItem from="1586952028333" duration="17692000" />
+      <workItem from="1587040536208" duration="13716000" />
+      <workItem from="1587207513293" duration="13239000" />
     </task>
     <servers />
   </component>
@@ -86,10 +97,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1585491143522">
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1586982842746">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585491143522" />
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586982842746" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585587419997">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -98,33 +109,68 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586602191428" />
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1586618773728">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1587225040577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586618773728" />
-    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1586618773727">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1587225040577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586618773727" />
-    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1586618773727">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1587225040576">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586618773727" />
-    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1586618773728">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587225040576" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1587225040577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586618773728" />
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1586602161243">
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1587225040578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586602161243" />
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586623367993">
+    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587225040578" />
+    <state width="1237" height="2" key="GridCell.Tab.1.center" timestamp="1587225040577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1586623367993" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1582662918801">
+    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.1.left" timestamp="1587225040577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1582662918801" />
+    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.1.right" timestamp="1587225040578">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587225040578" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1587056666854">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587056666854" />
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1587207687830">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587207687830" />
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586628706766">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1586628706766" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1586977211379">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586977211379" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1587047444772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587047444772" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

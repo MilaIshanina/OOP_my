@@ -7,17 +7,29 @@
 
 
 #include "../Units/Unit.h"
-#include "../Base/Base.h"
+#include "../Landscape/LandscapeInterface.h"
+#include "../LandscapeFactory/LandscapeFactory.h"
+#include "../NeutralObject/NeutralObjectInterface.h"
+
 
 class Field {
 private:
     unsigned height;
     unsigned width;
     unsigned controlMax;
+public:
+    unsigned int getControlMax() const;
+
+    void setNeutralObjectOnField();
+
+private:
     unsigned countObjects;
     int flag;
+    void setLandscapesOnField();
 
-
+    LandscapeFactory landscapeFactory;
+    NeutralObjectInterface** *neutralobject;
+    LandscapeInterface** *landscapes;
     ObjectInterface** *obj;
 
 public:
@@ -25,12 +37,15 @@ public:
     //int countBase;
     Field(unsigned height, unsigned width, unsigned controlMax);
 
+    Unit* getUnit(int x, int y);//метод, который возвращает с поля юнита
     Field(Field &field);
+
 
     Field(Field &&field);//перемещение объекта
 
+    void addNeutralObject(unsigned int newX, unsigned int newY, NeutralObjectInterface *neutral);
     void move(int x, int y, int newX, int newY);
-
+    void attack(int x1, int y1, int x2, int y2);
     //void createBase();
 
     ~Field();
@@ -91,6 +106,10 @@ public:
     void deleteUnit(unsigned newX, unsigned newY);
 
     void appendElement(unsigned newX, unsigned newY, ObjectInterface *unit);
+
+    //void kill
+
+
 };
 
 

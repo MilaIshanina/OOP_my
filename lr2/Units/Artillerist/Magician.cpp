@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "Magician.h"
-
+#include "../../Base/Base.h"
 
 
 Magician::Magician() : Artillerist() {
@@ -23,6 +23,11 @@ void Magician::whatYouName() {
 ObjectInterface *Magician::copy() {
 
     return new Magician(*this);
+
+}
+
+Magician::~Magician() {
+    observer->handleEvent(numberInArray);
 
 }
 

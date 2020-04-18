@@ -4,25 +4,103 @@
 #include "AbstractFactory/ConcreteFactoryMagicHero.h"
 #include "AbstractFactory/ConcreteFactoryStrongHero.h"
 #include "Base/Base.h"
+#include "NeutralObject/NeutralObject.h"
+#include "NeutralObject/MedicalKit.h"
+#include "NeutralObject/PowerPotion.h"
+#include "NeutralObject/Stone.h"
 
 int main() {
+    ///ИСПРАВИТЬ КОПИРОВАНИЕ ПОЛЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     system("chcp 65001");
 
     std::cout << "Hello, Player!" << std::endl;
+    /*Gnome* gnome = new Gnome();
+    NeutralObjectInterface* powerPotion = new PowerPotion();
+    NeutralObjectInterface* medicalKit = new MedicalKit();
+    (*medicalKit) + gnome->getHealthForUpdate();
+    (*powerPotion) + gnome->getDamageForUpdate();
+
+    std::cout << gnome->getHealth() << std::endl;
+    std::cout << gnome->getDamage() << std::endl;*/
+
+
 
     int counter = 0;//счетчик для базы, чтобы каждая база имела свой номер
 
 
 
     //создание поля 1
-    auto *field1 = new Field(12, 12, 5);
-
-    Base base1(field1, counter++);
+    auto *field = new Field(10, 10, 5);
 
 
-    base1.createUnit(1,1,1);
+    Unit** units = new Unit*[field->getControlMax()];//выделяем место для массива
+    Base* base1 = new Base(field, units, ++counter, 4);
 
-    field1->drawField();
+    field->appendElement(0,0,base1);
+    /*base1->createUnit(1,1,1);
+    base1->createUnit(6,5,1);
+    base1->createUnit(4,3,0);
+    field->drawField();
+
+    field->deleteUnit(5,1);
+    field->deleteUnit(1,1);
+    field->deleteUnit(3,0);
+    base1->createUnit(3,2,2);*/
+
+    /*auto * medicalKit = new MedicalKit();
+    auto * stone = new Stone();
+    field ->addNeutralObject(7,8,stone);
+    field->addNeutralObject(3,3,medicalKit);
+    field->move(2,2,5,5);
+    std::cout<< field->getUnit(5,5)->getHealth() << std::endl;
+    field->move(5,5,3,3);
+    std::cout<< field->getUnit(3,3)->getHealth() << std::endl;
+    field->drawField();
+    field->move(3,3,7,8);
+    field->drawField();
+    //field->move(3,3,0,0);//проверка встать на базу
+    field->move(3,3,5,6);//проверка прокси
+*/
+    //field->drawField();
+    base1->createUnit(1,1,1);
+    base1->createUnit(6,5,1);
+   /* std::cout<< field->getUnit(5,1)->getHealth() << std::endl;
+    field->attack(1,1,5,1);
+    field->drawField();
+    std::cout<< field->getUnit(5,1)->getHealth() << std::endl;*/
+    base1->createUnit(5,8,8);
+    field->drawField();
+    //std::cout << base1->getCountUnit() << std::endl;
+    int a = base1->getCountUnit();
+    ///очищаем память
+    for (int i = 0; i < a; i++) {
+        //std::cout << i <<std::endl;
+        if(dynamic_cast<Archer *>(units[i]) != nullptr) {
+            auto *archer = dynamic_cast<Archer *>(units[i]);
+            delete archer;
+        }
+        else if(dynamic_cast<Magician *>(units[i]) != nullptr) {
+            auto *magician = dynamic_cast<Magician *>(units[i]);
+            delete magician;
+        }
+        else if(dynamic_cast<ElfOnUnicorn *>(units[i]) != nullptr) {
+            auto *elfOnUnicorn = dynamic_cast<ElfOnUnicorn *>(units[i]);
+            delete elfOnUnicorn;
+        }
+        else if(dynamic_cast<KnightOnHorse *>(units[i]) != nullptr) {
+            auto *knightOnHorse = dynamic_cast<KnightOnHorse *>(units[i]);
+            delete knightOnHorse;
+        }
+        else if(dynamic_cast<Gnome *>(units[i]) != nullptr) {
+            auto *gnome = dynamic_cast<Gnome *>(units[i]);
+            delete gnome;
+        }
+        else if(dynamic_cast<Knight *>(units[i]) != nullptr) {
+            auto *knight = dynamic_cast<Knight *>(units[i]);
+            delete knight;
+        }
+    }
+
     /*std::cout << "Проверка на перемещение юнита на карте" << std::endl;
     field1.move(2,2,4,3);
     field1.drawField();

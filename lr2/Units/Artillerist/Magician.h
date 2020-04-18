@@ -15,6 +15,7 @@ public:
 
     ObjectInterface* copy() override;
     void whatYouName() override;
+    ~Magician();
 
 };
 

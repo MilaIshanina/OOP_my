@@ -13,6 +13,7 @@ public:
     Gnome();
     void whatYouName() override;
     ObjectInterface* copy() override;
+    ~Gnome();
 };
 
 

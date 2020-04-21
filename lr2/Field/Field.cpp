@@ -53,7 +53,7 @@ Field::Field(unsigned height, unsigned width, unsigned controlMax)
     }
 }
 
-//----------------------------------- Добавление юнита --------------------------------//
+//----------------------------------- Добавление элемента на поле --------------------------------//
 void Field::appendElement(unsigned newX, unsigned newY, ObjectInterface *unit) {
 
     if(!flag)
@@ -77,7 +77,7 @@ void Field::deleteUnit(unsigned newX, unsigned newY) {
     if (dynamic_cast<Unit *>(obj[newX][newY]) != nullptr) {
 
         if (newX <= width && newY <= height) {
-            std::cout << "deleteUnit    x=" << newX << "  y=" << newY << std::endl;
+            //std::cout << "deleteUnit    x=" << newX << "  y=" << newY << std::endl;
             if(dynamic_cast<Archer *>(obj[newX][newY]) != nullptr) {
                 auto *archer = dynamic_cast<Archer *>(obj[newX][newY]);
                 delete archer;
@@ -131,9 +131,9 @@ void Field::move( int x, int y, int newX, int newY)
             if( neutralobject[newX][newY] == nullptr ||(neutralobject[newX][newY] != nullptr && neutralobject[newX][newY]->canStepOnIt())) {
                 //landscapes[newX][newY]->updateUnitHealth(unit->getHealthForUpdate());
                 ProxyLandscape proxyLandscape(dynamic_cast<Landscape*>(landscapes[newX][newY]));
-                proxyLandscape.updateUnitHealth(unit->getHealthForUpdate());
+                proxyLandscape.updateUnitHealth(unit->getHealthForUpdate(), unit->whatYouName());
                 if (unit->getHealth() <= 0) {
-                    std::cout << "AAAAAAAAAAAAAA" << std::endl;
+                    //std::cout << "AAAAAAAAAAAAAA" << std::endl;
                     deleteUnit(x, y);
                 }
 
@@ -160,7 +160,7 @@ void Field::drawField() {
             {
                 if (obj[i][j] != nullptr)
                 {
-                    obj[i][j]->whatYouName();
+                    std::cout << obj[i][j]->whatYouName();
                     std::cout << ',';
                     std::cout<< landscapes[i][j]->whatYouName();
                     std::cout << ',';

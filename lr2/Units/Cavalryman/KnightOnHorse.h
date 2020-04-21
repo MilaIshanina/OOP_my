@@ -11,7 +11,7 @@
 class KnightOnHorse: public Cavalryman {
 public:
     KnightOnHorse();
-    virtual void whatYouName();
+    char whatYouName() override;
     ObjectInterface* copy() override;
     ~KnightOnHorse();
 };

@@ -1,11 +1,11 @@
 //
-// Created by Mila on 15.04.2020.
+// Created by Mila
 //
 
 #include "Glade.h"
 
 Glade::Glade() {
-    Landscape::name = '*';
+    name = '*';
 }
 
 char Glade::whatYouName() {
@@ -16,10 +16,8 @@ LandscapeInterface *Glade::copy() {
     return new Glade(*this);
 }
 
-void Glade::updateUnitHealth(int* healthUnit) {//////////////////////////////////////////
-    //*healthUnit = *healthUnit;
+void Glade::updateUnitHealth(int* healthUnit, char nameUnit) {
+
 }
 
-/*Glade::~Glade() {
 
-}*/

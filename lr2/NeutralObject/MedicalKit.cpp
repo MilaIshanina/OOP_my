@@ -5,8 +5,8 @@
 #include "MedicalKit.h"
 
 MedicalKit::MedicalKit() {
-    NeutralObject:: name = '+';
-    NeutralObject:: bonus = 10;
+    name = '+';
+    bonus = 20;
 }
 
 char MedicalKit::whatYouName() {

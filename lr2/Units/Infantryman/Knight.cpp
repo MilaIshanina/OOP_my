@@ -7,15 +7,14 @@
 #include "../../Base/Base.h"
 
 Knight::Knight(): Infantryman() {
-    Infantryman::health = 9;
-    Infantryman::armor = 2;
-    Infantryman::damage = 2;
-    //count//// = 3;
+    Infantryman::health = 150;
+    Infantryman::armor = 50;
+    Infantryman::damage = 35;
     Knight::name = 'K';
 }
 
-void Knight::whatYouName() {
-    std::cout<< name;
+char Knight::whatYouName() {
+    return name;
 }
 
 ObjectInterface *Knight::copy() {
@@ -23,7 +22,7 @@ ObjectInterface *Knight::copy() {
 }
 
 Knight::~Knight() {
-    std::cout<<"KNIGHT" << std::endl;
+    //std::cout<<"KNIGHT" << std::endl;
     observer->handleEvent(numberInArray);
 
 }

@@ -11,7 +11,7 @@
 class Knight: public Infantryman {
 public:
     Knight();
-    void whatYouName() override;
+    char whatYouName() override;
     ObjectInterface* copy() override;
     ~Knight();
 };

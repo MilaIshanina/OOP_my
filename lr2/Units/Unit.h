@@ -17,19 +17,14 @@ protected:
     int armor;//броня (т.е сколько раз надо ударить, чтобы здоровье начало падать)
     int  damage;// сила удара  (сколько падает брони и здоровья, когда бьешь)
     unsigned numberInArray;
+    char name;
+    Observer* observer;
+
 public:
     unsigned int getNumberInArray() const;
     void attack(Unit* unit);
     void setNumberInArray(unsigned int numberArray);
 
-protected:
-    //unsigned x;
-    //unsigned y;
-    char name;
-    Observer* observer;
-
-
-public:
     //char name;
 /*========================== МЕТОДЫ ==========================*/
 
@@ -37,7 +32,7 @@ public:
 
     //Unit(unsigned health, unsigned armor, unsigned damage);//конструктор
 
-    void whatYouName() override = 0;
+    char whatYouName() override = 0;
     ObjectInterface* copy() override = 0;
 
     int getArmor() const;

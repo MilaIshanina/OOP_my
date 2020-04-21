@@ -5,8 +5,8 @@
 #include "Shild.h"
 
 Shild::Shild() {
-    NeutralObject:: name = '@';
-    NeutralObject::bonus = 10;
+    name = '@';
+    bonus = 10;
 }
 
 char Shild::whatYouName() {

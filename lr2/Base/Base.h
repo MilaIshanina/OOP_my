@@ -18,32 +18,22 @@ class Base : public ObjectInterface, public Observer{
 private:
     ConcreteFactoryMagicHero* fMagic;
     ConcreteFactoryStrongHero* fStrong;
-    //std::vector<Unit*> unit;
     Field* field;
-    int counter;
+    int counter;//номер базы
     Unit** units;
     int countUnit;
-public:
-    int getCountUnit() const;
-
-private:
-//
     int controlMax;//максимальное количество юнитов
     int health;//здоровье
-
 public:
-    //unsigned countBase = 0;
-
-    void whatYouName() override;
-    ObjectInterface* copy() override;
-    int name;
+    //int name;
     Base(Field* field, Unit** units, int counter, int controlMax);
+    int getCountUnit() const;
+    char whatYouName() override;
+    ObjectInterface* copy() override;
     void createUnit(int type, int x, int y);
     void handleEvent(unsigned numberInArray) override;
 
 
-
-    //Base(Field *pField, int i);
 };
 
 

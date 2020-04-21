@@ -8,15 +8,15 @@
 
 
 Magician::Magician() : Artillerist() {
-    Artillerist::health = 10;
-    Artillerist::armor = 3;
-    Artillerist::damage = 3;
+    Artillerist::health = 100;
+    Artillerist::armor = 75;
+    Artillerist::damage = 50;
     //countShots = 3;
     Artillerist::name = 'M';
 }
 
-void Magician::whatYouName() {
-    std::cout<< name;
+char Magician::whatYouName() {
+    return name;
 
 }
 

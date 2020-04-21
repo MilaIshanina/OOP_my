@@ -15,7 +15,7 @@ public:
 
     char whatYouName() override; //метод для отображения ландшафта на поле как специальной буквы
     LandscapeInterface* copy() override;//метод копирования
-    void updateUnitHealth(int* healthUnit) override;
+    void updateUnitHealth(int* healthUnit, char nameUnit) override;
     //~Swamp();
 
 };

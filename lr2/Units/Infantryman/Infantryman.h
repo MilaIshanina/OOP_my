@@ -10,7 +10,7 @@
 
 class Infantryman: public Unit{
 protected:
-    void whatYouName() override = 0;
+    char whatYouName() override = 0;
     ObjectInterface* copy() override = 0;
 public:
     //Infantryman();

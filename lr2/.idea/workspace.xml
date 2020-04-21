@@ -90,6 +90,10 @@
       <workItem from="1586952028333" duration="17692000" />
       <workItem from="1587040536208" duration="13716000" />
       <workItem from="1587207513293" duration="13239000" />
+      <workItem from="1587226634294" duration="721000" />
+      <workItem from="1587405846101" duration="12506000" />
+      <workItem from="1587465248564" duration="1564000" />
+      <workItem from="1587469165087" duration="5984000" />
     </task>
     <servers />
   </component>
@@ -105,26 +109,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585587419997" />
-    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1586602191428">
+    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1587411758816">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586602191428" />
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1587225040577">
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587411758816" />
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1587480080398">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
-    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1587225040577">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587480080398" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1587480080398">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
-    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1587225040576">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587480080398" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1587480080398">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587225040576" />
-    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1587225040577">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587480080398" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1587480080398">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587225040577" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587480080398" />
     <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1587225040578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -145,10 +149,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587056666854" />
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1587207687830">
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1587226634770">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587207687830" />
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587226634770" />
     <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586628706766">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -161,16 +165,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587047444772" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>64</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

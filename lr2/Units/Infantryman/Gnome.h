@@ -11,7 +11,7 @@
 class Gnome: public Infantryman {
 public:
     Gnome();
-    void whatYouName() override;
+    char whatYouName() override;
     ObjectInterface* copy() override;
     ~Gnome();
 };

@@ -12,7 +12,7 @@ class Archer: public Artillerist {
 public:
     Archer();
 
-    void whatYouName() override;
+    char whatYouName() override;
     ObjectInterface* copy() override;
     ~Archer();
 

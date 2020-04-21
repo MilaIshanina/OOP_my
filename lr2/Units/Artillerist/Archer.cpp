@@ -8,17 +8,17 @@
 
 
 Archer::Archer() : Artillerist() {
-    Artillerist::health = 10;
-    Artillerist::armor = 3;
-    Artillerist::damage = 3;
+    Artillerist::health = 100;
+    Artillerist::armor = 80;
+    Artillerist::damage = 45;
     //countShots = 2;
     Artillerist::name = 'A';
 }
 
 
 
-void Archer::whatYouName() {
-    std::cout<< name;
+char Archer::whatYouName() {
+    return name;
 }
 
 ObjectInterface *Archer::copy() {

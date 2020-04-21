@@ -7,15 +7,15 @@
 #include "../../Base/Base.h"
 
 ElfOnUnicorn::ElfOnUnicorn(): Cavalryman() {
-    Cavalryman::health = 9;
-    Cavalryman::armor = 2;
-    Cavalryman::damage = 2;
+    Cavalryman::health = 100;
+    Cavalryman::armor = 30;
+    Cavalryman::damage = 70;
     //countSteps = 3;
     Cavalryman::name = 'E';
 }
 
-void ElfOnUnicorn::whatYouName() {
-    std::cout<< name;
+char ElfOnUnicorn::whatYouName() {
+    return name;
 }
 
 ObjectInterface *ElfOnUnicorn::copy() {

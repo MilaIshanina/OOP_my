@@ -5,9 +5,7 @@
 #include "Swamp.h"
 
 Swamp::Swamp() {
-
-    Landscape::name = '~';
-
+    name = '~';
 }
 
 char Swamp::whatYouName() {
@@ -18,7 +16,7 @@ LandscapeInterface *Swamp::copy() {
     return new Swamp(*this);
 }
 
-void Swamp::updateUnitHealth(int* healthUnit) {//////////////////////////////////////
+void Swamp::updateUnitHealth(int* healthUnit, char nameUnit) {
     *healthUnit = *healthUnit - 10;
 }
 

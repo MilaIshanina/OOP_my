@@ -1,5 +1,5 @@
 //
-// Created by Mila on 18.04.2020.
+// Created by Mila
 //
 
 #include "ProxyLandscape.h"
@@ -12,8 +12,11 @@ LandscapeInterface *ProxyLandscape::copy() {
     return landscape->copy();
 }
 
-void ProxyLandscape::updateUnitHealth(int *healthUnit) {
-    landscape->updateUnitHealth(healthUnit);
+void ProxyLandscape::updateUnitHealth(int *healthUnit, char nameUnit) {
+    if(!(nameUnit == 'E' && landscape->whatYouName() == '#'))
+    {
+        landscape->updateUnitHealth(healthUnit, nameUnit);
+    }
 }
 
 ProxyLandscape::ProxyLandscape(Landscape *landscape) {

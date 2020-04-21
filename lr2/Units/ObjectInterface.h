@@ -9,7 +9,7 @@
 class ObjectInterface{
 public:
     //virtual void move() = 0;    //метод длвижения
-    virtual void whatYouName() = 0; //метод для отображения юнита на поле как специальной буквы
+    virtual char whatYouName() = 0; //метод для отображения юнита на поле как специальной буквы
     virtual ObjectInterface* copy() = 0;//метод копирования
 
 };

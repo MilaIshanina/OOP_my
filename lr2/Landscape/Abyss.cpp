@@ -1,14 +1,12 @@
 //
-// Created by Mila on 15.04.2020.
+// Created by Mila
 //
 
 #include "Abyss.h"
-
-
 //пропасть
-Abyss::Abyss() {
 
-    Landscape::name = '#';
+Abyss::Abyss() {
+    name = '#';
 }
 
 char Abyss::whatYouName() {
@@ -19,7 +17,7 @@ LandscapeInterface *Abyss::copy() {
     return new Abyss(*this);
 }
 
-void Abyss::updateUnitHealth(int* healthUnit) {
+void Abyss::updateUnitHealth(int* healthUnit, char nameUnit) {
     *healthUnit = 0;
 }
 

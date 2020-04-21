@@ -5,6 +5,7 @@
 #include "Game.h"
 
 Game::Game() {
+    counter = 0;
     field = new Field(12, 12, 5);
     units = new Unit*[field->getControlMax()];//выделяем место для массива
     base = new Base(field, units, counter++, field->getControlMax());

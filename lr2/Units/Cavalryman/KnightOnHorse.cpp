@@ -7,14 +7,14 @@
 #include "../../Base/Base.h"
 
 KnightOnHorse::KnightOnHorse(): Cavalryman() {
-    Cavalryman::health = 11;
-    Cavalryman::armor = 2;
-    Cavalryman::damage = 2;
+    Cavalryman::health = 100;
+    Cavalryman::armor = 50;
+    Cavalryman::damage = 50;
     //countSteps = 2;
     Cavalryman::name = 'H';
 }
-void KnightOnHorse::whatYouName() {
-    std::cout << name;
+char KnightOnHorse::whatYouName() {
+    return name;
 }
 
 ObjectInterface *KnightOnHorse::copy() {

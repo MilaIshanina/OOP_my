@@ -11,7 +11,7 @@
 class Cavalryman: public Unit{
 protected:
     //unsigned countSteps;
-    void whatYouName() override = 0;
+    char whatYouName() override = 0;
     ObjectInterface* copy() override = 0;
 
 public:

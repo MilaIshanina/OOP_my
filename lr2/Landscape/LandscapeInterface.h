@@ -7,10 +7,10 @@
 
 class LandscapeInterface{
 public:
-    //virtual void move() = 0;    //метод длвижения
+
     virtual char whatYouName() = 0; //метод для отображения ландшафта на поле как специальной буквы
     virtual LandscapeInterface* copy() = 0;//метод копирования
-    virtual void updateUnitHealth(int* healthUnit) = 0;//
+    virtual void updateUnitHealth(int* healthUnit, char nameUnit) = 0;//
 
 };
 

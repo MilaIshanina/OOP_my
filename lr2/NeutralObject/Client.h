@@ -13,17 +13,18 @@
 class Client: public Context{
 public:
     virtual void useStrategy(Unit* unit) override {
-        if(dynamic_cast<MedicalKit*>(neutralObject) != nullptr)
+        if(neutralObject->whatYouName() == '+')///dynamic_cast<MedicalKit*>(neutralObject) != nullptr
         {
             (*neutralObject) + unit->getHealthForUpdate();
         }
-        if(dynamic_cast<PowerPotion*>(neutralObject) != nullptr)
+        if(neutralObject->whatYouName() == '&')
         {
             (*neutralObject) + unit->getDamageForUpdate();
         }
-        if(dynamic_cast<Shild*>(neutralObject) != nullptr)
+        if(neutralObject->whatYouName() == '@')
         {
-            (*neutralObject) + unit->getArmorForUpdate();
+            if(unit->whatYouName() != 'E' && unit->whatYouName() != 'M' && unit->whatYouName() != 'G')//щит увеличивает броню всем, кроме эльфа, мага и гнома
+                (*neutralObject) + unit->getArmorForUpdate();
         }
 
     }

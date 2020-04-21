@@ -52,12 +52,6 @@ C:/Users/User/CLionProjects/lr2/Units/Infantryman/Infantryman.h
 ../Units/Infantryman/Knight.h
 C:/Users/User/CLionProjects/lr2/Units/Infantryman/Knight.h
 
-C:/Users/User/CLionProjects/lr2/Base/Base.cpp
-iostream
--
-Base.h
-C:/Users/User/CLionProjects/lr2/Base/Base.h
-
 C:/Users/User/CLionProjects/lr2/Base/Base.h
 ../Units/ObjectInterface.h
 C:/Users/User/CLionProjects/lr2/Units/ObjectInterface.h
@@ -110,7 +104,23 @@ C:/Users/User/CLionProjects/lr2/Landscape/Glade.h
 ../Landscape/Abyss.h
 C:/Users/User/CLionProjects/lr2/Landscape/Abyss.h
 
+C:/Users/User/CLionProjects/lr2/NeutralObject/MedicalKit.h
+NeutralObject.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObject.h
+
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObject.h
+NeutralObjectInterface.h
 C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObjectInterface.h
+
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObjectInterface.h
+
+C:/Users/User/CLionProjects/lr2/NeutralObject/PowerPotion.h
+NeutralObject.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObject.h
+
+C:/Users/User/CLionProjects/lr2/NeutralObject/Stone.h
+NeutralObject.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObject.h
 
 C:/Users/User/CLionProjects/lr2/Observer/Observer.h
 
@@ -157,4 +167,24 @@ ObjectInterface.h
 C:/Users/User/CLionProjects/lr2/Units/ObjectInterface.h
 ../Observer/Observer.h
 C:/Users/User/CLionProjects/lr2/Observer/Observer.h
+
+C:/Users/User/CLionProjects/lr2/main.cpp
+iostream
+-
+Field/Field.h
+C:/Users/User/CLionProjects/lr2/Field/Field.h
+AbstractFactory/ConcreteFactoryMagicHero.h
+C:/Users/User/CLionProjects/lr2/AbstractFactory/ConcreteFactoryMagicHero.h
+AbstractFactory/ConcreteFactoryStrongHero.h
+C:/Users/User/CLionProjects/lr2/AbstractFactory/ConcreteFactoryStrongHero.h
+Base/Base.h
+C:/Users/User/CLionProjects/lr2/Base/Base.h
+NeutralObject/NeutralObject.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/NeutralObject.h
+NeutralObject/MedicalKit.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/MedicalKit.h
+NeutralObject/PowerPotion.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/PowerPotion.h
+NeutralObject/Stone.h
+C:/Users/User/CLionProjects/lr2/NeutralObject/Stone.h
 

@@ -11,7 +11,7 @@
 class ElfOnUnicorn: public Cavalryman {
 public:
     ElfOnUnicorn();
-    void whatYouName() override;
+    char whatYouName() override;
     ObjectInterface* copy() override;
     ~ElfOnUnicorn();
 };

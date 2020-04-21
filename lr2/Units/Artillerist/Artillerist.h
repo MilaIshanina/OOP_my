@@ -12,7 +12,7 @@ class Artillerist : public Unit{
 
 protected:
     //unsigned countShots;
-    void whatYouName() override = 0;
+    char whatYouName() override = 0;
     ObjectInterface* copy() override = 0;
 
 public:

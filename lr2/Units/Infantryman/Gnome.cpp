@@ -7,15 +7,15 @@
 #include "../../Base/Base.h"
 
 Gnome::Gnome(): Infantryman() {
-    Infantryman::health = 9;
-    Infantryman::armor = 2;
-    Infantryman::damage = 2;
+    Infantryman::health = 150;
+    Infantryman::armor = 30;//т.к. гном, в отличие от рыцаря не в доспехах
+    Infantryman::damage = 50;
     //count//// = 3;
     Infantryman::name = 'G';
 }
 
-void Gnome::whatYouName() {
-    std::cout<< name;
+char Gnome::whatYouName() {
+    return name;
 }
 
 ObjectInterface *Gnome::copy() {

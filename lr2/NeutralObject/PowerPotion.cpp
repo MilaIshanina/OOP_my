@@ -5,9 +5,8 @@
 #include "PowerPotion.h"
 
 PowerPotion::PowerPotion() {
-
-    NeutralObject:: name = '&';
-    NeutralObject::bonus = 10;
+    name = '&';
+    bonus = 10;
 }
 
 char PowerPotion::whatYouName() {

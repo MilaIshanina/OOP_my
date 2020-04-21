@@ -11,7 +11,7 @@
 
 int main() {
     ///ИСПРАВИТЬ КОПИРОВАНИЕ ПОЛЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    system("chcp 65001");
+    //system("chcp 65001");
 
     std::cout << "Hello, Player!" << std::endl;
     /*Gnome* gnome = new Gnome();
@@ -29,7 +29,7 @@ int main() {
 
 
 
-    //создание поля 1
+
     auto *field = new Field(10, 10, 5);
 
 
@@ -37,6 +37,21 @@ int main() {
     Base* base1 = new Base(field, units, ++counter, 4);
 
     field->appendElement(0,0,base1);
+    base1->createUnit(1,1,1);
+    base1->createUnit(4,5,1);
+    base1->createUnit(5,5,5);
+    base1->createUnit(3,8,9);
+    field->drawField();
+    std::cout<< "Health unit 'H':  " << field->getUnit(8,9)->getHealth() << std::endl;
+    field->move(8,9,9,9);
+    field->drawField();
+    std::cout<< "Health unit 'H':  " << field->getUnit(9,9)->getHealth() << std::endl;
+
+
+
+
+
+
     /*base1->createUnit(1,1,1);
     base1->createUnit(6,5,1);
     base1->createUnit(4,3,0);
@@ -62,18 +77,21 @@ int main() {
     field->move(3,3,5,6);//проверка прокси
 */
     //field->drawField();
-    base1->createUnit(1,1,1);
-    base1->createUnit(6,5,1);
+    /////////////////base1->createUnit(1,1,1);
+    ///////////////base1->createUnit(4,5,1);
    /* std::cout<< field->getUnit(5,1)->getHealth() << std::endl;
     field->attack(1,1,5,1);
     field->drawField();
     std::cout<< field->getUnit(5,1)->getHealth() << std::endl;*/
-    base1->createUnit(5,8,8);
-    field->drawField();
+    /////////////////base1->createUnit(5,8,8);
+    /////////////////field->drawField();
+    /////////////////field->move(5,1,5,6);
+    /////////////////field->addNeutralObject(9,9, new Stone());
+    /////////////////field->drawField();
     //std::cout << base1->getCountUnit() << std::endl;
-    int a = base1->getCountUnit();
+    /////////////////int a = base1->getCountUnit();
     ///очищаем память
-    for (int i = 0; i < a; i++) {
+    /*for (int i = a; i > -1; i--) {
         //std::cout << i <<std::endl;
         if(dynamic_cast<Archer *>(units[i]) != nullptr) {
             auto *archer = dynamic_cast<Archer *>(units[i]);
@@ -99,7 +117,7 @@ int main() {
             auto *knight = dynamic_cast<Knight *>(units[i]);
             delete knight;
         }
-    }
+    }*/
 
     /*std::cout << "Проверка на перемещение юнита на карте" << std::endl;
     field1.move(2,2,4,3);

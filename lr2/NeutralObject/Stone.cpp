@@ -5,7 +5,7 @@
 #include "Stone.h"
 
 Stone::Stone() {
-    NeutralObject:: name = 'o';
+    name = 'o';
 }
 
 char Stone::whatYouName() {
